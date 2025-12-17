@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="suica.js"></script>
+</head>
+
+<body>
+<suica fullWindow ontime="loop">
+
+	<group id="redbird" center="0,0,0"> 
+		<sphere center="0,0,0" id="body" color="red"></sphere> 
+		<cone center="0,-1,5"size="20" id="beak" color="orange" spinV="90"></cone> 
+		<sphere center="4,3,10" size="10" id="eye1" color="white"></sphere> 
+		<sphere center="-4,3,10" size="10" id="eye2" color="white"></sphere> 
+		<sphere center="4,3,13" size="5" id="pupil1" color="black"></sphere> 
+		<sphere center="-4,3,13" size="5" id="pupil2" color="black"></sphere> 
+		<sphere center="0,15,2" size="10" id="feather1" color="red"></sphere> 
+		<sphere center="0,14,-4" size="7" id="feather2" color="red"></sphere> 
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder>
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+		
+	</group> <group id="bluebird" center="0,0,0"> <sphere center="0,0,0" id="body" color="blue"></sphere> 
+		<cone center="0,-1,5"size="20" id="beak" color="orange" spinV="90"></cone> 
+		<sphere center="4,3,10" size="10" id="eye1" color="white"></sphere> 
+		<sphere center="-4,3,10" size="10" id="eye2" color="white"></sphere> 
+		<sphere center="4,3,13" size="5" id="pupil1" color="black"></sphere> 
+		<sphere center="-4,3,13" size="5" id="pupil2" color="black"></sphere> 
+		<sphere center="0,15,2" size="10" id="feather1" color="blue"></sphere> 
+		<sphere center="0,14,-4" size="7" id="feather2" color="blue"></sphere> 
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+	</group>
+
+		<group id="yellowbird" center="0,0,0"> 
+		<sphere center="0,0,0" id="body" color="yellow"></sphere> 
+		<cone center="0,-1,5"size="20" id="beak" color="orange" spinV="90"></cone> 
+		<sphere center="4,3,10" size="10" id="eye1" color="white"></sphere> 
+		<sphere center="-4,3,10" size="10" id="eye2" color="white"></sphere> 
+		<sphere center="4,3,13" size="5" id="pupil1" color="black"></sphere> 
+		<sphere center="-4,3,13" size="5" id="pupil2" color="black"></sphere> 
+		<sphere center="0,15,2" size="10" id="feather1" color="yellow"></sphere> 
+		<sphere center="0,14,-4" size="7" id="feather2" color="yellow"></sphere> 
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder>
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+		
+	</group> <group id="greenbird" center="0,0,0"> 
+		<sphere center="0,0,0" id="body" color="green"></sphere> 
+		<cone center="0,-1,5"size="20" id="beak" color="yellow" spinV="90"></cone> 
+		<sphere center="4,3,10" size="10" id="eye1" color="white"></sphere> 
+		<sphere center="-4,3,10" size="10" id="eye2" color="white"></sphere> 
+		<sphere center="4,3,13" size="5" id="pupil1" color="black"></sphere> 
+		<sphere center="-4,3,13" size="5" id="pupil2" color="black"></sphere> 
+		<sphere center="0,15,2" size="10" id="feather1" color="green"></sphere> 
+		<sphere center="0,14,-4" size="7" id="feather2" color="green"></sphere> 
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+	</group>
+
+	<group id="pinkbird" center="0,0,0">
+		<sphere center="0,0,0" color="pink"></sphere>
+		<cone center="0,-1,5" size="20" color="red" spinV="90"></cone>
+		<sphere center="4,3,10" size="10" color="white"></sphere>
+		<sphere center="-4,3,10" size="10" color="white"></sphere>
+		<sphere center="4,3,13" size="5" color="black"></sphere>
+		<sphere center="-4,3,13" size="5" color="black"></sphere>
+		<sphere center="0,15,2" size="10" color="pink"></sphere>
+		<sphere center="0,14,-4" size="7" color="pink"></sphere>
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+	</group>
+
+	<group id="orangebird" center="0,0,0">
+    	<sphere center="0,0,0" color="orange"></sphere>
+    	<cone center="0,-1,5" size="20" color="yellow" spinV="90"></cone>
+    	<sphere center="4,3,10" size="10" color="white"></sphere>
+    	<sphere center="-4,3,10" size="10" color="white"></sphere>
+    	<sphere center="4,3,13" size="5" color="black"></sphere>
+    	<sphere center="-4,3,13" size="5" color="black"></sphere>
+		<sphere center="0,15,2" size="10" color="orange"></sphere>
+		<sphere center="0,14,-4" size="7" color="orange"></sphere>
+		<cylinder center="2,7,13", size="3, 10, 3", id="eyebrow1", color="black" spinS="-55"> </cylinder> 
+		<cylinder center="-2,7,13", size="3, 10, 3", id="eyebrow2", color="black" spinS="55"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather1", color="black" spinV="-45"></cylinder> 
+		<cylinder center="2,0,-13", size="3, 10, 3", id="backfeather2", color="black" spinV="-135"></cylinder> 
+	</group>
+
+		<lookat from="0,0,350">
+
+    </orbit>
+</suica>
+
+<script>
+function loop(t, dT)
+{
+    let radius = 100;
+
+    let redspeed = 0.5;
+    let redangle = t * redspeed;
+
+    redbird.x =  Math.cos(redangle) * radius;
+    redbird.z =  Math.sin(redangle) * radius;
+    redbird.y = 0;
+    redbird.spinH += 180 * dT;
+	redbird.spinV += 35 * dT;
+
+    yellowbird.x = -redbird.x;
+    yellowbird.z = -redbird.z;
+    yellowbird.y = 0;
+    yellowbird.spinH += -180 * dT;
+	yellowbird.spinV += -35 * dT;
+
+    let bluespeed = 0.2;
+    let blueangle = t * bluespeed;
+
+    bluebird.x = 0;
+    bluebird.z =  Math.sin(blueangle) * radius;
+    bluebird.y =  Math.cos(blueangle) * radius;
+    bluebird.spinH += 150 * dT;
+	bluebird.spinV += 90 * dT;
+
+    greenbird.x = 0;
+    greenbird.z = -bluebird.z;
+    greenbird.y = -bluebird.y;
+    greenbird.spinH += -150 * dT;
+	greenbird.spinV += -90 * dT;
+
+	let hillSpeed = 25;       
+	let hillHeight = 45;        
+	let hillFrequency = 0.05;   
+
+	pinkbird.x = (t * hillSpeed) % 300 - 150;   
+	pinkbird.z = -150;                        
+	pinkbird.y = Math.sin(pinkbird.x * hillFrequency) * hillHeight;
+
+	pinkbird.spinH = 90;
+	pinkbird.spinV = Math.cos(pinkbird.x * hillFrequency) * 20;
+
+	orangebird.spinH += 720 * dT;
+	orangebird.spinV += 360 * dT;
+}
+</script>
+
+<!--Stoyan Ivanov-->
+
+</body>
